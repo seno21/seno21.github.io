@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/tailwind.css">
+    <link rel="stylesheet" href="public/fontawesome/css/all.css">
+    <link rel="stylesheet" href="public/css/custom.css">
+    <link rel="shortcut icon" href="public/img/icon.png" type="image/x-icon">
+    <title>I'm Fega Suseno</title>
+</head>
+<body>
+    <header class="fixed w-full sm:px-16 px-4 bg-gray-900 flex flex-wrap items-center sm:py-0 py-2">
+        <div class="flex-1 flex justify-between items-center">
+            <!-- <img src="public/img/icon.png" alt="Brand" width="45"> -->
+            <h1 class="me text-2xl font-semibold"><b class="text-tlxColor font-extrabold">A</b>bout <b class="font-extrabold text-tlxColor">M</b>e</h1>
+        </div>
+        <label for="burger" class="sm:hidden cursor-pointer">
+            <i class="fas fa-bars fa-lg"></i>
+        </label>
+        <input type="checkbox" class="hidden" id="burger"> 
+            <div class="hidden sm:flex sm:items-center sm:w-auto w-full" id="menu">
+                <nav>
+                    <ul class="sm:flex items-center text-base text-white pt-4 sm:pt-0">
+                        <li>
+                            <a href="index.html" class="block nav_link"><i class="fas fa-user-circle px-1"></i>Home</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tylexit.com" target="_blank" class="block nav_link"><i class="fas fa-blog px-1"></i>Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC8RCBNaBZkAEq8WvFtx8SRQ" target="_blank" class="block nav_link"><i class="fab fa-youtube px-1"></i>Youtube</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="block nav_link"><i class="fas fa-id-card px-1"></i>Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <section class="md:h-screen h-auto">
+        <div class="grid md:grid-cols-2 gap-10 px-5 md:py-20 py-10 items-center">
+            <div class="sm:px-32 px-7 md:py-5 py-0">
+                <p>
+                    <h1 class="text-7xl font-bold">Hello,</h1>
+                    <h1 class="text-1xl text-center font-semibold bg-tlxColor w-32 rounded-md px-1">My Name is</h1>
+                    <h1 class="text-3xl font-semibold"><i class="text_darkblue"></i>Fega Suseno</i></h1>
+                    <ul class="bread">
+                        <li>Web Designer</li>
+                        <li>IT Support</li>
+                        <li>Students</li>
+                    </ul>
+                </p>
+                <p class="pt-4">
+                    <a class="py-2 px-2 font-semibold btn_outline" target="_blank" href="#"><i class="fas fa-sm fa-download"></i> Here Me</a>
+                </p>
+            </div>
+            <div class="py-5 ">
+                <img class="mx-auto foto" src="public/img/Profil.png" alt="It's Me">
+            </div>
+        </div>
+    </section>
+
+    <footer class="mx-auto rounded-2xl shadow-inner w-60 bg-gray-900 py-1">
+        <p class="text-center text-sm">
+            Copyright &copy; <script>document.write(new Date().getFullYear());</script> <a href="https://www.tylexit.com/p/about-me.html" target="_blank">tylexit.com</a> 
+        </p>
+    </footer>
+</body>
+</html>

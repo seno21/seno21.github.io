@@ -1,0 +1,101 @@
+/* LAYOUTING CSS SKILL */
+
+@media only screen and (max-width: 525px) {
+  .box {
+    width: 450px;
+  }
+  .warna#html {
+    width: 350px;
+  }
+
+  .warna#css {
+    width: 330px;
+  }
+
+  .warna#js {
+    width: 150px;
+  }
+
+  .warna#php {
+    width: 250px;
+  }
+
+  .warna#sql {
+    width: 225px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .box {
+    width: 400px;
+  }
+  .warna#html {
+    width: 320px;
+  }
+
+  .warna#css {
+    width: 300px;
+  }
+
+  .warna#js {
+    width: 150px;
+  }
+
+  .warna#php {
+    width: 240px;
+  }
+
+  .warna#sql {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .box {
+    width: 370px;
+  }
+  .warna#html {
+    width: 270px;
+  }
+
+  .warna#css {
+    width: 250px;
+  }
+
+  .warna#js {
+    width: 70px;
+  }
+
+  .warna#php {
+    width: 170px;
+  }
+
+  .warna#sql {
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .box {
+    width: 300px;
+  }
+  .warna#html {
+    width: 200px;
+  }
+
+  .warna#css {
+    width: 180px;
+  }
+
+  .warna#js {
+    width: 10px;
+  }
+
+  .warna#php {
+    width: 100px;
+  }
+
+  .warna#sql {
+    width: 50px;
+  }
+}

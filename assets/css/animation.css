@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Doppio+One&display=swap");
+/* BAR SKILLS */
+.disple {
+  display: block;
+  padding-bottom: 15px;
+  position: relative; /*Ini supaya bisa di atas tiap bar */
+}
+
+.text_bar {
+  font-size: 8px;
+  font-weight: bold;
+  padding-right: 100px;
+  padding: 5px;
+  text-align: right;
+}
+
+.text_bar::before {
+  content: attr(val);
+  color: #000;
+  background-color: whitesmoke;
+  position: absolute;
+  border-radius: 2px;
+  padding: 2px;
+  top: -2px;
+}
+
+.box {
+  width: 500px;
+  background-color: grey;
+  height: 10px;
+  border-radius: 7px; /* Yang radius box belakang yang depan tetep*/
+}
+
+.warna {
+  background-color: #0000fd;
+  height: 10px;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 7px;
+  /* "animation: ayam 2s ease" */
+  /* animation-duration: ; */
+}
+
+@keyframes ayam {
+  0% {
+    width: 0px;
+  }
+}
+
+/* WARNA ANIMASI + RESPONSIVE */
+.warna#html {
+  width: 400px;
+}
+
+.warna#css {
+  width: 380px;
+}
+
+.warna#js {
+  width: 200px;
+}
+
+.warna#php {
+  width: 300px;
+}
+
+.warna#sql {
+  width: 250px;
+}
+
+/* CARD FOTO */
+.card_border {
+  border: 2px solid #0000fd;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card_hider {
+  background-color: #0000fd;
+  border-radius: 5px;
+  padding: 7px;
+  font-family: "Doppio One", sans-serif;
+}
+
+.card_bodi {
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+}
