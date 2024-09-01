@@ -83,13 +83,18 @@
             </li>
             <li>
               <a href="#resume" class="nav-link scrollto"
-                ><i class="bi bi-terminal"></i> <span>Resume</span></a
+                ><i class="bi bi-file-person"></i> <span>Resume</span></a
               >
             </li>
             <li>
               <a href="#services" class="nav-link scrollto"
                 ><i class="bi bi-pc-display"></i>
                 <span>Tech Experience</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link scrollto"
+                ><i class="bi bi-terminal"></i> <span>Articles</span></a
               >
             </li>
             <li>
@@ -110,12 +115,14 @@
       class="d-flex flex-column justify-content-center align-items-center">
       <div class="hero-container" data-aos="fade-in">
         <h3 class="">Hi, my name is</h3>
-        <h1 class="text-bold" style="font-size: 50px">Fega Suseno</h1>
-        <p class="mt-2">
+        <div class="m-4 mb-5">
+          <h1 class="text-bold">Fega Suseno</h1>
+        </div>
+        <p>
           I'm a
           <span
             class="typed"
-            data-typed-items="IT Support, Linux Sysadmin, Web Developer"></span>
+            data-typed-items="IT Support, DevOps Engineer, Web Developer"></span>
         </p>
       </div>
     </section>
@@ -136,18 +143,27 @@
                 class="img-fluid rounded-circle"
                 alt="" />
             </div>
-            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <div class="col-lg-8 pt-4 p-5 pt-lg-0 content" data-aos="fade-left">
               <h3>I'm Fega Suseno</h3>
 
               <p class="text-lg">
-                I'm a IT Support with more than 6+ years of experience. My
-                passion is open source technology, Linux administration and
-                programming. I currently work as an IT staff member at a
-                hospital. My responsible for maintaining servers, computer
-                networks, server administration, server service configuration,
-                automation and server virtualization management. I have
-                experience building on-premise servers, starting from assembly,
-                installation, service configuration until server maintenance.
+                IT enthusiast with more than
+                <script>
+                  const awal = 2016;
+                  const sekarang = new Date().getFullYear();
+                  const experience = sekarang - awal;
+
+                  console.log(experience);
+                  document.getElementById("experience").textContent(experience);
+                </script>
+                <span id="experience"></span> years of experience. My passion is
+                open source technology, Linux administration and programming. I
+                currently work as an IT staff member at a hospital. My
+                responsible for maintaining servers, computer networks, server
+                administration, server service configuration, automation and
+                server virtualization management. I have experience building
+                on-premise servers, starting from assembly, installation,
+                service configuration until server maintenance.
               </p>
             </div>
           </div>
@@ -163,302 +179,108 @@
           </div>
 
           <div class="row">
-            <div class="col-lg-6" data-aos="fade-up">
+            <div class="col-lg-4" data-aos="fade-up">
               <h3 class="resume-title">Education</h3>
               <div class="resume-item">
-                <h4>Computer &amp; Network Engineering</h4>
-                <h5>2014 - 2017</h5>
-                <p><em>Jamblang Public Vocational High School</em></p>
-              </div>
-              <div class="resume-item">
                 <h4>Informatics Engineering</h4>
-                <h5>2019 - 2023</h5>
+                <h5>2023</h5>
                 <p><em>Cirebon Muhammadiyah University</em></p>
               </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title">Professional Experience</h3>
               <div class="resume-item">
-                <h4>Divisi IT - PT. Dirgantara Indonesia (Apprenticeship)</h4>
-                <h5>at 2016</h5>
-                <p>
-                  <em
-                    >Pajajaran Street No. 154, Bandung, West Java - Indonesia
-                  </em>
-                </p>
-                <ul>
-                  <li>
-                    Performing maintenance on computer hardware and printers to
-                    support user activities
-                  </li>
-                  <li>
-                    Installing the company's standard operating system and
-                    software
-                  </li>
-                  <li>
-                    Managing a Samba server on RedHat Linux Enterprise for file
-                    sharing purposes over the network
-                  </li>
-                </ul>
+                <h4>Computer &amp; Network Engineering</h4>
+                <h5>2017</h5>
+                <p><em>Jamblang Public Vocational High School</em></p>
+              </div>
+            </div>
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Professional Experience</h3>
+
+              <div class="resume-item">
+                <div class="card shadow border-1 rounded-4 mx-3 mb-5">
+                  <div class="card-body p-5">
+                    <div class="row">
+                      <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                        <div class="bg-light p-4 py-5 rounded-4">
+                          <div class="text-primary fw-bolder mb-2 fs-4">
+                            2017 - Present
+                          </div>
+                          <div class="fw-bolder fs-5">
+                            IT Staff (DevOps Engineer)
+                          </div>
+                          <div class="text-muted">RS Mitra Plumbon</div>
+                          <div class="text-muted">Cirebon Regency</div>
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div>
+                          <ul>
+                            <li>
+                              Maintain hardware, networks, and install/configure
+                              standard company software
+                            </li>
+                            <li>
+                              Install and configure operating systems and server
+                              services from scratch
+                            </li>
+                            <li>
+                              Server, hosting, and service configuration and
+                              administration
+                            </li>
+                            <li>
+                              Automate database backups, retention deletion, and
+                              restoration
+                            </li>
+                            <li>Administer and manage server virtualization</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="resume-item">
-                <h4>IT Staff - Mitra Plumbon Healthcare Group</h4>
-                <h5>2017 - Now</h5>
-                <p>
-                  <em
-                    >Main Road Plumbon - Palimanan No.Km.11, Cirebon Regency,
-                    West Java 45155</em
-                  >
-                </p>
-                <ul>
-                  <li>
-                    Maintaining computer hardware, computer networks, installing
-                    and configuring standard company software
-                  </li>
-                  <li>
-                    Installation and configuration operating system and service
-                    server from scratch
-                  </li>
-                  <li>
-                    Maintaining servers, hosting, server administration and
-                    server service configuration
-                  </li>
-                  <li>
-                    Automation backup, delete retention and restoration of
-                    database servers
-                  </li>
-                  <li>
-                    Maintaining administration and server virtualization
-                    management
-                  </li>
-                </ul>
+                <div class="card shadow border-1 rounded-4 mx-3 mb-5">
+                  <div class="card-body p-5">
+                    <div class="row">
+                      <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                        <div class="bg-light p-4 py-5 rounded-4">
+                          <div class="text-primary fw-bolder mb-2 fs-4">
+                            in 2016
+                          </div>
+                          <div class="fw-bolder fs-5">DIvisi IT</div>
+                          <div class="text-muted">
+                            PT. Dirgantara Indonesia (Apprenticeship)
+                          </div>
+                          <div class="text-muted">Bandung</div>
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div>
+                          <ul>
+                            <li>
+                              Performing maintenance on computer hardware and
+                              printers to support user activities
+                            </li>
+                            <li>
+                              Installing the company's standard operating system
+                              and software
+                            </li>
+                            <li>
+                              Managing a Samba server on RedHat Linux Enterprise
+                              for file sharing purposes over the network
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- End Resume Section -->
-
-      <!-- ======= Portfolio Section ======= -->
-      <!-- <section id="portfolio" class="portfolio section-bg">
-        <div class="container">
-          <div class="section-title">
-            <h2>Portfolio</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
-          </div>
-
-          <div class="row" data-aos="fade-up">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Card</li>
-                <li data-filter=".filter-web">Web</li>
-              </ul>
-            </div>
-          </div>
-
-          <div
-            class="row portfolio-container"
-            data-aos="fade-up"
-            data-aos-delay="100">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-1.jpg"
-                  class="img-fluid"
-                  alt="" />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-1.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="App 1"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-2.jpg"
-                  class="img-fluid"
-                  alt="" />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-2.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Web 3"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-3.jpg"
-                  class="img-fluid"
-                  alt="" />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-3.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="App 2"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-4.jpg"
-                  class="img-fluid"
-                  alt="" />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-4.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Card 2"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-5.jpg"
-                  class="img-fluid"
-                  alt="" />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-5.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Web 2"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-6.jpg"
-                  class="img-fluid"
-                  alt="" />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-6.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="App 3"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-7.jpg"
-                  class="img-fluid"
-                  alt="" />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-7.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Card 1"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-8.jpg"
-                  class="img-fluid"
-                  alt="" />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-8.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Card 3"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-9.jpg"
-                  class="img-fluid"
-                  alt="" />
-                <div class="portfolio-links">
-                  <a
-                    href="assets/img/portfolio/portfolio-9.jpg"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Web 3"
-                    ><i class="bx bx-plus"></i
-                  ></a>
-                  <a href="portfolio-details.html" title="More Details"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- End Portfolio Section -->
 
       <!-- ======= Services Section ======= -->
       <section id="services" class="services">
@@ -614,7 +436,7 @@
       <!-- End Services Section -->
 
       <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
+      <section id="contact" class="contact vh-100">
         <div class="container">
           <div class="section-title">
             <h2>Contact</h2>
@@ -637,9 +459,13 @@
                 <i class="bi bi-whatsapp"></i>
                 <h4>Contact Me</h4>
                 <p>
-                  I really hope to work with you,
-                  <a target="_blank" href="https://wa.link/fp78e9"
-                    ><u>Hire Me</u></a
+                  I really hope to work with you
+                  <br />
+                  <a
+                    class="mt-2 btn btn-primary btn-sm"
+                    target="_blank"
+                    href="https://wa.link/fp78e9"
+                    >Hire Me</a
                   >
                 </p>
               </div>
