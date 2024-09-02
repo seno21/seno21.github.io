@@ -511,7 +511,7 @@
         .then((result) => result.json())
         .then((data) => {
           const articleContainer = document.getElementById("article");
-          const limitedData = data.slice(0, 9); //batasi hanya 8 post
+          const limitedData = data.slice(0, 6); //batasi hanya 8 post
 
           limitedData.forEach((article) => {
             const articleCard = createArticleCard(article);
