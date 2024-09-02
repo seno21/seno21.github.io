@@ -33,9 +33,6 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
-
-    <!-- FOnt Awesome -->
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
   </head>
 
   <body>
@@ -98,8 +95,8 @@
               >
             </li>
             <li>
-              <a href="#contact" class="nav-link scrollto"
-                ><i class="bx bx-phone"></i> <span>Contact</span></a
+              <a href="#contact" class="nav-link scrollto">
+                <i class="bi bi-person-lines-fill"></i><span>Contact</span></a
               >
             </li>
           </ul>
@@ -148,17 +145,9 @@
 
               <p class="text-lg">
                 IT enthusiast with more than
-                <script>
-                  const awal = 2016;
-                  const sekarang = new Date().getFullYear();
-                  const experience = sekarang - awal;
-
-                  console.log(experience);
-                  document.getElementById("experience").textContent(experience);
-                </script>
-                <span id="experience"></span> years of experience. My passion is
-                open source technology, Linux administration and programming. I
-                currently work as an IT staff member at a hospital. My
+                <span id="pengalaman"></span>+ years of experience. My passion
+                is open source technology, Linux administration and programming.
+                I currently work as an IT staff member at a hospital. My
                 responsible for maintaining servers, computer networks, server
                 administration, server service configuration, automation and
                 server virtualization management. I have experience building
@@ -435,14 +424,27 @@
       </section>
       <!-- End Services Section -->
 
+      <!-- ======= Blog DevTo Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>My Article</h2>
+          </div>
+          <div class="row" id="article">
+            <!-- di isi dari json devto -->
+          </div>
+        </div>
+      </section>
+      <!-- End Blog DevTo Section -->
+
       <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact vh-100">
+      <section id="contact" class="contact">
         <div class="container">
           <div class="section-title">
             <h2>Contact</h2>
           </div>
 
-          <div class="row info" data-aos="fade-in">
+          <div class="row mx-1 info shadow rounded-4" data-aos="fade-in">
             <div class="col-md-6">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
@@ -462,10 +464,10 @@
                   I really hope to work with you
                   <br />
                   <a
-                    class="mt-2 btn btn-primary btn-sm"
+                    class="mt-2 btn btn-success btn-sm"
                     target="_blank"
                     href="https://wa.link/fp78e9"
-                    >Hire Me</a
+                    >WhastsApp Me</a
                   >
                 </p>
               </div>
@@ -493,6 +495,51 @@
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
+    <script>
+      // Hitung pengalaman
+      const awal = 2017;
+      const sekarang = new Date().getFullYear();
+      const experience = sekarang - awal;
+
+      console.log(experience);
+      document.getElementById("pengalaman").innerText = experience;
+
+      // Menampilkan article dari dev.to API
+      const endpoint = "https://dev.to/api/articles?username=seno21";
+
+      fetch(endpoint)
+        .then((result) => result.json())
+        .then((data) => {
+          const articleContainer = document.getElementById("article");
+          const limitedData = data.slice(0, 9); //batasi hanya 8 post
+
+          limitedData.forEach((article) => {
+            const articleCard = createArticleCard(article);
+            articleContainer.innerHTML += articleCard;
+          });
+        })
+        .catch((error) => console.error("Error fetching data:", error));
+
+      function createArticleCard(article) {
+        return `
+            <div class="col-md-4 mt-3">
+              <div class="card">
+                <div class="card-header">${article.title}</div>
+                <div class="card-body">
+                  <h5 class="card-title">${article.user.name}, ${
+          article.readable_publish_date
+        }</h5>
+                  <p class="card-text">
+                    ${article.description || "No description available."}
+                  </p>
+                  <p><b>Tags:</b> ${article.tags}</p>
+                  <a href="${article.url}" class="card-link">Read More</a>
+                </div>
+              </div>
+            </div>
+      `;
+      }
+    </script>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
@@ -506,8 +553,5 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
-    <!-- Fontawesome -->
-    <script src="assets/fontawesome/js/all.min.js"></script>
   </body>
 </html>
