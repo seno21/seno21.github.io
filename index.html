@@ -90,7 +90,7 @@
               >
             </li>
             <li>
-              <a href="#" class="nav-link scrollto"
+              <a href="#blog" class="nav-link scrollto"
                 ><i class="bi bi-terminal"></i> <span>Articles</span></a
               >
             </li>
@@ -286,7 +286,7 @@
                   width="auto"
                   height="40px" />
               </div>
-              <h4 class="title"><a href="">Jenkins</a></h4>
+              <h4 class="title fs-3"><a href="">Jenkins</a></h4>
               <p class="description">
                 I use it to automate daily production database backups and
                 router config backups
@@ -382,8 +382,7 @@
               </div>
               <h4 class="title"><a href="">Docker</a></h4>
               <p class="description">
-                I use this for on-premise server virtualization architecture
-                purposes
+                I am using Docker for the development environment.
               </p>
             </div>
             <div
@@ -398,8 +397,7 @@
               </div>
               <h4 class="title"><a href="">Terraform</a></h4>
               <p class="description">
-                I use this for on-premise server virtualization architecture
-                purposes
+                I use Terraform to set up the environment configuratio
               </p>
             </div>
             <div
@@ -415,8 +413,7 @@
               </div>
               <h4 class="title"><a href="">Amazon Web Services</a></h4>
               <p class="description">
-                I use this for on-premise server virtualization architecture
-                purposes
+                I use AWS as the cloud platform for several web services
               </p>
             </div>
           </div>
@@ -425,7 +422,7 @@
       <!-- End Services Section -->
 
       <!-- ======= Blog DevTo Section ======= -->
-      <section id="contact" class="contact">
+      <section id="blog">
         <div class="container">
           <div class="section-title">
             <h2>My Article</h2>
@@ -438,7 +435,7 @@
       <!-- End Blog DevTo Section -->
 
       <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
+      <section id="contact" class="contact vh-100">
         <div class="container">
           <div class="section-title">
             <h2>Contact</h2>
@@ -524,15 +521,15 @@
         return `
             <div class="col-md-4 mt-3">
               <div class="card">
-                <div class="card-header">${article.title}</div>
+                <div class="card-header fs-4">${article.title}</div>
                 <div class="card-body">
-                  <h5 class="card-title">${article.user.name}, ${
+                  <h5 class="fs-5">${article.user.name}, ${
           article.readable_publish_date
         }</h5>
                   <p class="card-text">
                     ${article.description || "No description available."}
                   </p>
-                  <p><b>Tags:</b> ${article.tags}</p>
+                  <p><span class="fw-bold">Tags:</span> ${article.tags}</p>
                   <a href="${article.url}" class="card-link">Read More</a>
                 </div>
               </div>
