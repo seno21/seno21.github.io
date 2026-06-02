@@ -1136,3 +1136,76 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+/*--------------------------------------------------------------
+# Mobile Responsive
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+  section {
+    padding: 40px 0;
+  }
+
+  .section-title h2 {
+    font-size: 26px;
+  }
+
+  #header .profile img {
+    width: 90px;
+  }
+
+  #header .profile h1 {
+    font-size: 20px;
+  }
+
+  #about .col-lg-4 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  #about .col-lg-4 img {
+    max-width: 200px;
+  }
+
+  #about .col-lg-8 {
+    padding: 0 1rem !important;
+  }
+
+  .resume .resume-item .card-body {
+    padding: 1.5rem !important;
+  }
+
+  .resume .resume-item .card-body .row > .col:first-child {
+    margin-bottom: 1rem;
+  }
+
+  .resume .resume-item .card-body .bg-light {
+    padding: 1.5rem !important;
+  }
+
+  .resume .resume-item .card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .container,
+  .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .tech-card,
+  .contact-card {
+    padding: 1.5rem 1rem !important;
+  }
+
+  .article-card .card-body {
+    padding: 1rem !important;
+  }
+
+  .search-devto-link {
+    width: 100%;
+    justify-content: center;
+  }
+}

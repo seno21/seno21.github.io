@@ -26,15 +26,15 @@
 <script setup>
 const color = '4a5568'
 const techItems = [
-  { icon: `https://cdn.simpleicons.org/jenkins/${color}`, name: 'Jenkins', description: 'Automate daily production database backups and router config backups' },
-  { icon: `https://cdn.simpleicons.org/grafana/${color}`, name: 'Grafana', description: 'Monitor production server resources and database resources' },
-  { icon: `https://cdn.simpleicons.org/gitlab/${color}`, name: 'Gitlab', description: 'Source control management, CI/CD, and local production scripts' },
-  { icon: `https://cdn.simpleicons.org/linux/${color}`, name: 'Linux OS', description: 'Bash scripting, service management and server maintenance' },
-  { icon: `https://cdn.simpleicons.org/ansible/${color}`, name: 'Ansible', description: 'Install and configure production server services' },
-  { icon: `https://cdn.simpleicons.org/proxmox/${color}`, name: 'Proxmox VE', description: 'On-premise server virtualization architecture' },
-  { icon: `https://cdn.simpleicons.org/docker/${color}`, name: 'Docker', description: 'Containerized development environments' },
-  { icon: `https://cdn.simpleicons.org/terraform/${color}`, name: 'Terraform', description: 'Infrastructure as code for environment setup' },
-  { icon: `https://cdn.simpleicons.org/amazonwebservices/${color}`, name: 'Amazon Web Services', description: 'Cloud platform for web services' },
+  { icon: `https://cdn.simpleicons.org/jenkins/${color}`, name: 'Jenkins', description: 'CI/CD automation' },
+  { icon: `https://cdn.simpleicons.org/grafana/${color}`, name: 'Grafana', description: 'Server monitoring' },
+  { icon: `https://cdn.simpleicons.org/gitlab/${color}`, name: 'Gitlab', description: 'SCM & CI/CD' },
+  { icon: `https://cdn.simpleicons.org/linux/${color}`, name: 'Linux OS', description: 'Sysadmin & Bash' },
+  { icon: `https://cdn.simpleicons.org/ansible/${color}`, name: 'Ansible', description: 'Configuration management' },
+  { icon: `https://cdn.simpleicons.org/proxmox/${color}`, name: 'Proxmox VE', description: 'Server virtualization' },
+  { icon: `https://cdn.simpleicons.org/docker/${color}`, name: 'Docker', description: 'Containerization' },
+  { icon: `https://cdn.simpleicons.org/terraform/${color}`, name: 'Terraform', description: 'Infrastructure as Code' },
+  { icon: '/assets/img/icon/aws.svg', name: 'Amazon Web Services', description: 'Cloud platform' },
 ]
 </script>
 
@@ -56,10 +56,10 @@ const techItems = [
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
   margin: 0 auto 1.25rem;
-  border-radius: 16px;
+  border-radius: 20px;
   background: linear-gradient(135deg, #f0f4ff 0%, #e8edf5 100%);
   transition: background 0.25s ease;
 }
@@ -67,8 +67,8 @@ const techItems = [
   background: linear-gradient(135deg, #e0e8ff 0%, #d0d8f0 100%);
 }
 .tech-icon {
-  width: 28px;
-  height: 28px;
+  width: 38px;
+  height: 38px;
 }
 .tech-name {
   font-size: 1.05rem;

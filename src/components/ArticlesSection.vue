@@ -14,13 +14,13 @@
         <div class="search-devto mb-5">
           <a href="https://dev.to/seno21" target="_blank" class="search-devto-link">
             <svg class="search-devto-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="8"/>
-              <path d="m21 21-4.35-4.35"/>
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
             </svg>
             <span>Cari artikel lainnya di Dev.to</span>
             <svg class="search-devto-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M7 17 17 7"/>
-              <path d="M7 7h10v10"/>
+              <path d="M7 17 17 7" />
+              <path d="M7 7h10v10" />
             </svg>
           </a>
         </div>
@@ -29,31 +29,16 @@
             <a :href="article.url" target="_blank" class="text-decoration-none">
               <div class="card h-100 border-0 shadow-sm article-card">
                 <div class="card-img-wrap">
-                  <img
-                    :src="article.social_image || article.cover_image || '/assets/img/favicon.png'"
-                    class="card-img-top"
-                    :alt="article.title"
-                    loading="lazy"
-                  />
+                  <img :src="article.social_image || article.cover_image || '/assets/img/favicon.png'" class="card-img-top" :alt="article.title" loading="lazy" />
                 </div>
                 <div class="card-body d-flex flex-column">
                   <div class="mb-2">
-                    <span
-                      v-for="tag in article.tag_list"
-                      :key="tag"
-                      class="badge bg-light text-dark me-1 fw-normal"
-                    >#{{ tag }}</span>
+                    <span v-for="tag in article.tag_list" :key="tag" class="badge bg-light text-dark me-1 fw-normal">#{{ tag }}</span>
                   </div>
                   <h5 class="card-title fw-bold text-dark">{{ article.title }}</h5>
                   <p class="card-text text-muted small flex-grow-1">{{ article.description || '' }}</p>
                   <div class="d-flex align-items-center mt-auto pt-2 border-top">
-                    <img
-                      :src="article.user.profile_image_90"
-                      class="rounded-circle me-2"
-                      width="28"
-                      height="28"
-                      :alt="article.user.name"
-                    />
+                    <img :src="article.user.profile_image_90" class="rounded-circle me-2" width="28" height="28" :alt="article.user.name" />
                     <div>
                       <div class="small fw-semibold text-dark">{{ article.user.name }}</div>
                       <div class="small text-muted">{{ article.readable_publish_date }}</div>
@@ -71,28 +56,30 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from "vue";
 
-const articles = ref([])
-const loading = ref(true)
-const error = ref(null)
+const articles = ref([]);
+const loading = ref(true);
+const error = ref(null);
 
 onMounted(async () => {
   try {
-    const res = await fetch('https://dev.to/api/articles?username=seno21')
-    const data = await res.json()
-    articles.value = data.slice(0, 6)
+    const res = await fetch("https://dev.to/api/articles?username=seno21");
+    const data = await res.json();
+    articles.value = data.slice(0, 6);
   } catch (err) {
-    error.value = 'Error fetching articles: ' + err.message
+    error.value = "Error fetching articles: " + err.message;
   } finally {
-    loading.value = false
+    loading.value = false;
   }
-})
+});
 </script>
 
 <style scoped>
 .article-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   border-radius: 12px;
   overflow: hidden;
 }
